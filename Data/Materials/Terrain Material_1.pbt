@@ -12,6 +12,18 @@
           Id: 5423140306472603088
         }
       }
+      Overrides {
+        Name: "cmp:Material3"
+        AssetReference {
+          Id: 841534158063459245
+        }
+      }
+      Overrides {
+        Name: "cmp:Material4"
+        AssetReference {
+          Id: 3109552412681917260
+        }
+      }
     }
     Assets {
       Id: 11227996993301192136
@@ -29,6 +41,15 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "forest-floor_001"
+      }
+    }
+    Assets {
+      Id: 3109552412681917260
+      Name: "Grass Basic"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_grass_001_uv"
       }
     }
   }
