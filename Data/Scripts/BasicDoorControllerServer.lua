@@ -43,7 +43,7 @@ end
 
 if SPEED <= 0.0 then
     warn("Speed must be positive")
-    SPEED = 400.0
+    SPEED = 450.0
 end
 
 -- Constants
