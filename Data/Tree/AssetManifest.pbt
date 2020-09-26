@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15273815861058661530
+  Name: "Castle Part - Window 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_part_window_002_ref"
+  }
+}
+Assets {
   Id: 13248158078773431724
   Name: "Wooden Bucket"
   PlatformAssetType: 1
@@ -179,6 +188,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4399680046032978799
+  Name: "Plane 1m - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_001"
+  }
+}
+Assets {
   Id: 4134898156239771605
   Name: "Carpet Tile 01"
   PlatformAssetType: 1
@@ -230,6 +248,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_006"
+  }
+}
+Assets {
+  Id: 1250907491363434799
+  Name: "Carpet 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_carpets_001_uv"
   }
 }
 Assets {

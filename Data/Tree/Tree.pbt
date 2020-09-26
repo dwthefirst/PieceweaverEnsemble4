@@ -52,7 +52,7 @@ Objects {
   ChildIds: 7249302318439704705
   ChildIds: 2909122009853203108
   ChildIds: 14323078231653486206
-  ChildIds: 11924044558555470622
+  ChildIds: 7132388759727571183
   ChildIds: 17218792598233611089
   ChildIds: 3273453882256486536
   ChildIds: 16668596378573399891
@@ -89,6 +89,7 @@ Objects {
   ChildIds: 7623449688743391549
   ChildIds: 10335752050544319158
   ChildIds: 16141773747536252953
+  ChildIds: 1368154411093105932
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -98,6 +99,67 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 1368154411093105932
+  Name: "UI Text Box"
+  Transform {
+    Location {
+      X: -900
+      Y: -300
+      Z: 800
+    }
+    Rotation {
+      Yaw: -109.999985
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Text"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
   }
 }
 Objects {
@@ -264,7 +326,7 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: -2550
+      X: -2500
       Y: 1500
       Z: 800
     }
@@ -1557,7 +1619,7 @@ Objects {
   }
   ParentId: 4781671109827199097
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -1578,57 +1640,211 @@ Objects {
   }
 }
 Objects {
-  Id: 11924044558555470622
+  Id: 7132388759727571183
   Name: "Picture Frame"
   Transform {
+    Location {
+      X: -2050
+      Y: -1450
+      Z: 5750
+    }
+    Rotation {
+      Yaw: 90
+    }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 3
+      Y: 3
+      Z: 3
     }
   }
   ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16454902717915576246
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Picture Frame"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -2050
-            Y: -1450
-            Z: 5750
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 85.0001297
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 3
-            Y: 3
-            Z: 3
-          }
-        }
-        Overrides {
-          Name: "Collidable"
-          Enum {
-            Value: "mc:ecollisionsetting:forceoff"
-          }
-        }
+  ChildIds: 16152885754923144097
+  ChildIds: 6527968347089868805
+  ChildIds: 8160689249161287722
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 7132388759727571183
+    SubobjectId: 16454902717915576246
+    InstanceId: 11924044558555470622
+    TemplateId: 17218039287398150409
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 8160689249161287722
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -6.10351563e-05
+      Y: 0.000183105469
+      Z: 100.010986
+    }
+    Rotation {
+      Yaw: -6.10351563e-05
+      Roll: 5.88859073e-10
+    }
+    Scale {
+      X: 0.75
+      Y: -0.25
+      Z: 2.75
+    }
+  }
+  ParentId: 7132388759727571183
+  ChildIds: 8662729794554521247
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 8662729794554521247
+  Name: "TransportPlayer"
+  Transform {
+    Location {
+      X: -164.990952
+      Y: -157.13472
+      Z: -133.334076
+    }
+    Rotation {
+      Pitch: 0.0086196987
+      Yaw: -134.999832
+      Roll: 0.00865212642
+    }
+    Scale {
+      X: 0.111111104
+      Y: 0.111111127
+      Z: 0.111111112
+    }
+  }
+  ParentId: 8160689249161287722
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14662015444877408256
+    }
+  }
+}
+Objects {
+  Id: 6527968347089868805
+  Name: "Plane 1m - One Sided"
+  Transform {
+    Location {
+      X: -1.91662598
+      Y: -2.89129639
+      Z: 158.51001
+    }
+    Rotation {
+      Roll: -90.1580811
+    }
+    Scale {
+      X: 0.917055666
+      Y: 1.31769669
+      Z: 1.00000036
+    }
+  }
+  ParentId: 7132388759727571183
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1250907491363434799
       }
     }
-    TemplateAsset {
-      Id: 17218039287398150409
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4399680046032978799
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 6527968347089868805
+    SubobjectId: 15868674898885062492
+    InstanceId: 11924044558555470622
+    TemplateId: 17218039287398150409
+  }
+}
+Objects {
+  Id: 16152885754923144097
+  Name: "Castle Part - Window 02"
+  Transform {
+    Location {
+      X: 1.91674805
+      Y: 2.89135742
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.574861348
+      Y: 0.574861348
+      Z: 0.574861348
+    }
+  }
+  ParentId: 7132388759727571183
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15273815861058661530
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 16152885754923144097
+    SubobjectId: 7388805126956508408
+    InstanceId: 11924044558555470622
+    TemplateId: 17218039287398150409
   }
 }
 Objects {
