@@ -1495,16 +1495,16 @@ Objects {
   Transform {
     Location {
       X: -2100
-      Y: -1050
-      Z: 6550
+      Y: -720.427185
+      Z: 7066.51904
     }
     Rotation {
-      Roll: -10.0001221
+      Roll: -9.27191162
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1
+      Y: 1.95376921
+      Z: 1.71724737
     }
   }
   ParentId: 4781671109827199097
@@ -1535,16 +1535,16 @@ Objects {
   Transform {
     Location {
       X: -1400
-      Y: -1050
-      Z: 6550
+      Y: -719.332153
+      Z: 7078.32
     }
     Rotation {
       Roll: -10.0000916
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1
+      Y: 1.88759816
+      Z: 2.03519869
     }
   }
   ParentId: 4781671109827199097
@@ -1575,16 +1575,16 @@ Objects {
   Transform {
     Location {
       X: -650
-      Y: -1800
+      Y: -2253.21045
       Z: 5950
     }
     Rotation {
       Yaw: 89.9996567
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.89479911
+      Y: 0.999999821
+      Z: 1.91925788
     }
   }
   ParentId: 4781671109827199097
@@ -1615,7 +1615,7 @@ Objects {
   Transform {
     Location {
       X: -1450
-      Y: -1800
+      Y: -2223.61621
       Z: 5950
     }
     Rotation {
@@ -1623,7 +1623,7 @@ Objects {
     Scale {
       X: 1
       Y: 1
-      Z: 1
+      Z: 1.94103479
     }
   }
   ParentId: 4781671109827199097
@@ -1654,15 +1654,15 @@ Objects {
   Transform {
     Location {
       X: -1500
-      Y: -1050
+      Y: -749.08
       Z: 5950
     }
     Rotation {
     }
     Scale {
-      X: 1
+      X: 1.05884755
       Y: 1
-      Z: 1
+      Z: 1.97094703
     }
   }
   ParentId: 4781671109827199097
@@ -1693,14 +1693,14 @@ Objects {
   Transform {
     Location {
       X: -1200
-      Y: -1000
+      Y: -727.678101
       Z: 5950
     }
     Rotation {
     }
     Scale {
       X: 1
-      Y: 1
+      Y: 1.90258515
       Z: 1
     }
   }
@@ -1732,16 +1732,16 @@ Objects {
   Transform {
     Location {
       X: -2150
-      Y: -1850
+      Y: -2255.25684
       Z: 5950
     }
     Rotation {
       Yaw: 89.9997482
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.91056335
+      Y: 0.999994576
+      Z: 1.96150362
     }
   }
   ParentId: 4781671109827199097
@@ -1772,14 +1772,14 @@ Objects {
   Transform {
     Location {
       X: -2700
-      Y: -1050
+      Y: -682.218
       Z: 5950
     }
     Rotation {
     }
     Scale {
       X: 1
-      Y: 1
+      Y: 1.95733166
       Z: 1
     }
   }
@@ -1865,7 +1865,7 @@ Objects {
   Transform {
     Location {
       X: -2200
-      Y: -1800
+      Y: -2221.43628
       Z: 5950
     }
     Rotation {
@@ -1873,7 +1873,7 @@ Objects {
     Scale {
       X: 1
       Y: 1
-      Z: 1
+      Z: 1.92599654
     }
   }
   ParentId: 4781671109827199097
@@ -1903,8 +1903,8 @@ Objects {
   Name: "Fantasy Castle Wall 01"
   Transform {
     Location {
-      X: -2250
-      Y: -1050
+      X: -2192.71509
+      Y: -743.798523
       Z: 5950
     }
     Rotation {
@@ -1912,7 +1912,7 @@ Objects {
     Scale {
       X: 1
       Y: 1
-      Z: 1
+      Z: 1.95670891
     }
   }
   ParentId: 4781671109827199097
@@ -1943,14 +1943,14 @@ Objects {
   Transform {
     Location {
       X: -1900
-      Y: -1000
+      Y: -775.195313
       Z: 5950
     }
     Rotation {
     }
     Scale {
       X: 1
-      Y: 1
+      Y: 1.77017128
       Z: 1
     }
   }
