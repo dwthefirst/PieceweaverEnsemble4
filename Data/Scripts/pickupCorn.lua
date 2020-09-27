@@ -1,23 +1,33 @@
 ﻿local trigger = script.parent
+local cornCount = 0
 
-function OnBeginOverlap(whichTrigger, other)
-	if other:IsA("Player") then
-		print(whichTrigger.name .. ": Begin Trigger Overlap with " .. other.name)
+function OnInteracted(Trigger, other)
+	
+	local resourceTable = other:GetResources()
+	local cornStalks = trigger.parent:FindChildByName("Corn Stalks")
+	local singleStalk = cornStalks:FindChildByName("Corn Stalk")
+	local cornLabel = trigger.parent.parent:FindChildByName("Corn Collected Display")
+	
+	if resourceTable == nil then
+	
+		other:SetResource("Corn Collected", 0)
+		
 	end
+	
+	other:SetResource("Corn Collected", 1)
+	singleStalk:Destroy()
+	local secondStalk = cornStalks:FindChildByName("Corn Stalk")
+	secondStalk:Destroy()
+	
+	cornCount = cornCount + 1
+	
+	cornLabel.text = "Corn Collected:" + tostring(other:GetResource("Corn Collected"))
+	
+	if cornCount == 2 then
+		trigger:Destroy()
+	end
+	
+	
 end
 
-function OnEndOverlap(whichTrigger, other)
-	if other:IsA("Player") then
-		print(whichTrigger.name .. ": End Trigger Overlap with " .. other.name)
-	end
-end
-
-function OnInteracted(whichTrigger, other)
-	if other:IsA("Player") then
-		print(whichTrigger.name .. ": Trigger Interacted " .. other.name)
-	end
-end
-
-trigger.beginOverlapEvent:Connect(OnBeginOverlap)
-trigger.endOverlapEvent:Connect(OnEndOverlap)
 trigger.interactedEvent:Connect(OnInteracted)
