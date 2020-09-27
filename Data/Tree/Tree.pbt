@@ -92,6 +92,8 @@ Objects {
   ChildIds: 10714117364153328238
   ChildIds: 1669599844283999218
   ChildIds: 4196672708708173767
+  ChildIds: 10655104176955178278
+  ChildIds: 15662570318985981894
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -101,6 +103,747 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 15662570318985981894
+  Name: "Serpant Staff"
+  Transform {
+    Location {
+      X: -630.057861
+      Y: -469.758545
+      Z: 803.47937
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 4297043045909038213
+  ChildIds: 6513677142568151259
+  ChildIds: 395135848914569042
+  ChildIds: 17866686543457246519
+  ChildIds: 2004172332095844933
+  ChildIds: 9623928343514433890
+  ChildIds: 17962147062925865524
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Equipment {
+    SocketName: "right_prop"
+    PickupTrigger {
+      SelfId: 2004172332095844933
+    }
+    Weapon {
+      ProjectileAssetRef {
+        Id: 4438203312472444446
+      }
+      MuzzleFlashAssetRef {
+        Id: 117606317863661083
+      }
+      TrailAssetRef {
+        Id: 9544415026981323149
+      }
+      ImpactAssetRef {
+        Id: 933215238669884188
+      }
+      Muzzle {
+        Location {
+        }
+        Rotation {
+        }
+      }
+      AnimationSet: "2hand_staff_stance"
+      OutOfAmmoSfxAssetRef {
+        Id: 841534158063459245
+      }
+      ReloadSfxAssetRef {
+        Id: 841534158063459245
+      }
+      ImpactProjectileAssetRef {
+        Id: 841534158063459245
+      }
+      BeamAssetRef {
+        Id: 841534158063459245
+      }
+      BurstCount: 1
+      BurstDuration: 4
+      Range: 100000
+      ImpactPlayerAssetRef {
+        Id: 15115964336621045406
+      }
+      ReticleType {
+        Value: "mc:ereticletype:crosshair"
+      }
+      MaxAmmo: -1
+      AmmoType: "rounds"
+      MultiShot: 1
+      ProjectileSpeed: 20000
+      ProjectileLifeSpan: 10
+      ProjectileGravity: 1
+      ProjectileLength: 100
+      ProjectileRadius: 4
+      SpreadMin: 1
+      SpreadMax: 90
+      SpreadDecreaseSpeed: 6
+      SpreadIncreasePerShot: 2
+      SpreadPenaltyPerShot: 1.5
+      DefaultAbility {
+        SelfId: 6513677142568151259
+      }
+      ReloadAbility {
+        SelfId: 395135848914569042
+      }
+      Damage: 10
+      WeaponTrajectoryMode {
+        Value: "mc:eweapontrajectorymode:muzzletolooktarget"
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15662570318985981894
+    SubobjectId: 3228808377032072449
+    InstanceId: 896553635223414948
+    TemplateId: 18206901769550486058
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 17962147062925865524
+  Name: "ServerContext"
+  Transform {
+    Location {
+      X: -7935.67285
+      Y: 227.102783
+      Z: -3365.73047
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15662570318985981894
+  ChildIds: 12594882078678126858
+  ChildIds: 10579761651491325045
+  ChildIds: 12030635833661636553
+  ChildIds: 12732100693015842245
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: Server
+  }
+  InstanceHistory {
+    SelfId: 17962147062925865524
+    SubobjectId: 924914894085849331
+    InstanceId: 896553635223414948
+    TemplateId: 18206901769550486058
+  }
+}
+Objects {
+  Id: 12732100693015842245
+  Name: "EquipmentAttachObjectToPlayer"
+  Transform {
+    Location {
+      X: -1479.57495
+      Y: -180.838379
+      Z: 3211.52979
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17962147062925865524
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Object"
+      ObjectReference {
+        SelfId: 17866686543457246519
+      }
+    }
+    Overrides {
+      Name: "cs:Object:tooltip"
+      String: "Set object to attach to player on equip event."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3418017159957295666
+    }
+  }
+  InstanceHistory {
+    SelfId: 12732100693015842245
+    SubobjectId: 4981591122213601026
+    InstanceId: 896553635223414948
+    TemplateId: 18206901769550486058
+  }
+}
+Objects {
+  Id: 12030635833661636553
+  Name: "EquipmentStanceServer"
+  Transform {
+    Location {
+      X: -1479.57495
+      Y: -180.838379
+      Z: 3211.52979
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17962147062925865524
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 179195381739729802
+    }
+  }
+  InstanceHistory {
+    SelfId: 12030635833661636553
+    SubobjectId: 6009718526616374542
+    InstanceId: 896553635223414948
+    TemplateId: 18206901769550486058
+  }
+}
+Objects {
+  Id: 10579761651491325045
+  Name: "EquipmentPickupServer"
+  Transform {
+    Location {
+      X: -1479.57495
+      Y: -180.838379
+      Z: 3211.52979
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17962147062925865524
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Trigger"
+      ObjectReference {
+        SelfId: 2004172332095844933
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10163181402587433384
+    }
+  }
+  InstanceHistory {
+    SelfId: 10579761651491325045
+    SubobjectId: 7440357316584666802
+    InstanceId: 896553635223414948
+    TemplateId: 18206901769550486058
+  }
+}
+Objects {
+  Id: 12594882078678126858
+  Name: "EquipmentPersisterServer"
+  Transform {
+    Location {
+      X: -1479.57495
+      Y: -1479.57483
+    }
+    Rotation {
+      Yaw: 65.522316
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17962147062925865524
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10155968620265883963
+    }
+  }
+  InstanceHistory {
+    SelfId: 12594882078678126858
+    SubobjectId: 6582479389424493517
+    InstanceId: 896553635223414948
+    TemplateId: 18206901769550486058
+  }
+}
+Objects {
+  Id: 9623928343514433890
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15662570318985981894
+  ChildIds: 6578270841386466318
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 9623928343514433890
+    SubobjectId: 8078515942860848037
+    InstanceId: 896553635223414948
+    TemplateId: 18206901769550486058
+  }
+}
+Objects {
+  Id: 6578270841386466318
+  Name: "DestructrableWeaponClient"
+  Transform {
+    Location {
+      X: -15541.7539
+      Y: -19529.4805
+      Z: -11175.0898
+    }
+    Rotation {
+      Pitch: 14.2927504
+      Yaw: 97.7076721
+      Roll: 13.0109282
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9623928343514433890
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1691621708801690102
+    }
+  }
+  InstanceHistory {
+    SelfId: 6578270841386466318
+    SubobjectId: 12599135372137942729
+    InstanceId: 896553635223414948
+    TemplateId: 18206901769550486058
+  }
+}
+Objects {
+  Id: 2004172332095844933
+  Name: "PickupTrigger"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15662570318985981894
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Equip Serpant Staff"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 2004172332095844933
+    SubobjectId: 17168822090553098370
+    InstanceId: 896553635223414948
+    TemplateId: 18206901769550486058
+  }
+}
+Objects {
+  Id: 17866686543457246519
+  Name: "Hitbox Trigger"
+  Transform {
+    Location {
+      X: 314.873535
+      Y: 1479.57495
+      Z: -154.200562
+    }
+    Rotation {
+    }
+    Scale {
+      X: 4.80943584
+      Y: 4.80943584
+      Z: 4.80943584
+    }
+  }
+  ParentId: 15662570318985981894
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:PlayerSocket"
+      String: "root"
+    }
+    Overrides {
+      Name: "cs:LocalPosition"
+      Vector {
+        X: 100
+        Z: 120
+      }
+    }
+    Overrides {
+      Name: "cs:LocalRotation"
+      Rotator {
+      }
+    }
+    Overrides {
+      Name: "cs:LocalPosition:tooltip"
+      String: "Specify the local position of the object when attached to the player socket."
+    }
+    Overrides {
+      Name: "cs:LocalRotation:tooltip"
+      String: "Specify the local rotation of the object when attached to the player socket."
+    }
+    Overrides {
+      Name: "cs:PlayerSocket:tooltip"
+      String: "Specify the player socket to attach the object."
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:sphere"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17866686543457246519
+    SubobjectId: 171295235445649392
+    InstanceId: 896553635223414948
+    TemplateId: 18206901769550486058
+  }
+}
+Objects {
+  Id: 395135848914569042
+  Name: "ReloadAbility"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15662570318985981894
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Ability {
+    IsEnabled: true
+    KeyBinding: "ability_ult"
+    CastPhaseSettings {
+      Duration: 0.6
+      CanMove: true
+      CanJump: true
+      CanRotate: true
+      IsTargetDataUpdated: true
+      Facing_V2 {
+        Value: "mc:eabilitysetfacing:aim"
+      }
+    }
+    ExecutePhaseSettings {
+      Duration: 0.15
+      CanMove: true
+      CanJump: true
+      CanRotate: true
+      PreventOtherAbilities: true
+      IsTargetDataUpdated: true
+      Facing_V2 {
+        Value: "mc:eabilitysetfacing:aim"
+      }
+    }
+    RecoveryPhaseSettings {
+      CanMove: true
+      CanJump: true
+      CanRotate: true
+      PreventOtherAbilities: true
+      IsTargetDataUpdated: true
+      Facing_V2 {
+        Value: "mc:eabilitysetfacing:none"
+      }
+    }
+    CooldownPhaseSettings {
+      CanMove: true
+      CanJump: true
+      CanRotate: true
+      PreventOtherAbilities: true
+      IsTargetDataUpdated: true
+      Facing_V2 {
+        Value: "mc:eabilitysetfacing:none"
+      }
+    }
+    Animation: "2hand_staff_magic_up"
+    KeyBinding_v2 {
+      Value: "mc:egameaction:extraaction_03"
+    }
+  }
+  InstanceHistory {
+    SelfId: 395135848914569042
+    SubobjectId: 17359236166643250581
+    InstanceId: 896553635223414948
+    TemplateId: 18206901769550486058
+  }
+}
+Objects {
+  Id: 6513677142568151259
+  Name: "AttackAbility"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15662570318985981894
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Ability {
+    IsEnabled: true
+    KeyBinding: "ability_primary"
+    CastPhaseSettings {
+      Duration: 0.3
+      CanMove: true
+      CanRotate: true
+      PreventOtherAbilities: true
+      IsTargetDataUpdated: true
+      Facing_V2 {
+        Value: "mc:eabilitysetfacing:aim"
+      }
+    }
+    ExecutePhaseSettings {
+      Duration: 1.3
+      CanMove: true
+      CanJump: true
+      CanRotate: true
+      PreventOtherAbilities: true
+      IsTargetDataUpdated: true
+      Facing_V2 {
+        Value: "mc:eabilitysetfacing:aim"
+      }
+    }
+    RecoveryPhaseSettings {
+      Duration: 0.01
+      CanMove: true
+      CanJump: true
+      CanRotate: true
+      PreventOtherAbilities: true
+      IsTargetDataUpdated: true
+      Facing_V2 {
+        Value: "mc:eabilitysetfacing:none"
+      }
+    }
+    CooldownPhaseSettings {
+      Duration: 0.25
+      CanMove: true
+      CanJump: true
+      CanRotate: true
+      PreventOtherAbilities: true
+      IsTargetDataUpdated: true
+      Facing_V2 {
+        Value: "mc:eabilitysetfacing:none"
+      }
+    }
+    Animation: "2hand_staff_magic_bolt"
+    KeyBinding_v2 {
+      Value: "mc:egameaction:primaryaction"
+    }
+  }
+  InstanceHistory {
+    SelfId: 6513677142568151259
+    SubobjectId: 12679482869231000092
+    InstanceId: 896553635223414948
+    TemplateId: 18206901769550486058
+  }
+}
+Objects {
+  Id: 4297043045909038213
+  Name: "DestructibleWeaponServer"
+  Transform {
+    Location {
+      X: -5790.83301
+      Y: 1479.57495
+      Z: -163.074341
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15662570318985981894
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:DamageToObjects"
+      Int: 30
+    }
+    Overrides {
+      Name: "cs:DamageToPlayers"
+      Int: 5
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 18110187092686066944
+    }
+  }
+  InstanceHistory {
+    SelfId: 4297043045909038213
+    SubobjectId: 14857798783915898434
+    InstanceId: 896553635223414948
+    TemplateId: 18206901769550486058
+  }
+}
+Objects {
+  Id: 10655104176955178278
+  Name: "Bonfire"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8935847399440265160
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Bonfire"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1025.46509
+            Y: -812.732422
+            Z: 803.47937
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.436672568
+            Y: 0.436672568
+            Z: 0.436672568
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4156555483442550978
+    }
   }
 }
 Objects {
