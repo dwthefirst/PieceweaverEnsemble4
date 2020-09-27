@@ -1,6 +1,66 @@
 ﻿Name: "CornElements"
 RootId: 14158416516556863651
 Objects {
+  Id: 16220363234507748447
+  Name: "Corn Collected Display"
+  Transform {
+    Location {
+      X: -5097.71875
+      Y: 2433.63647
+      Z: 1781.11743
+    }
+    Rotation {
+      Yaw: 131.096603
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14158416516556863651
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Control {
+    Width: 254
+    Height: 60
+    UIX: 737.808533
+    UIY: 42.1717834
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Corn Collected:"
+      Color {
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 3953566229066655009
   Name: "[Alchemi] Cornstalk Group"
   Transform {
