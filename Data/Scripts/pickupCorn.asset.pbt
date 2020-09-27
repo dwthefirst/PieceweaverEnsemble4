@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 13107436061682159537
-  Name: "DialogManagerServer"
+  Id: 5481115497990182655
+  Name: "pickupCorn"
   PlatformAssetType: 3
   TextAsset {
   }
